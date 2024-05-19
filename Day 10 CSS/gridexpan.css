@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  display: grid;
+  grid-template-rows: repeat(3, 300px) 150px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+    "header header header"
+    "sidebar c1 c1"
+    "sidebar c2 c3"
+    "footer footer footer";
+  gap: 10px;
+}
+
+.div1 {
+  grid-area: header;
+  background-color: antiquewhite;
+}
+.div2 {
+  grid-area: sidebar;
+  background-color: aquamarine;
+}
+.div3 {
+  grid-area: c1;
+  background-color: bisque;
+}
+.div4 {
+  grid-area: c2;
+  background-color: blueviolet;
+}
+.div5 {
+  grid-area: c3;
+  background-color: grey;
+}
+.div6 {
+  grid-area: footer;
+  background-color: cyan;
+}

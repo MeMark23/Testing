@@ -1,0 +1,419 @@
+@font-face {
+  font-family: razer;
+  src: url(TitilliumWeb-Regular.ttf);
+}
+body {
+  margin: 0;
+  padding: 0;
+  /* width: 100vw;
+  height: 100vh; */
+  font-family: razer;
+}
+.container {
+  display: grid;
+  grid-template-rows: auto auto repeat(6, 700px) 450px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas:
+    "nav nav"
+    "div1 div1"
+    "div2 div2"
+    "div3 div3"
+    "div4 div4"
+    "div5 div6"
+    "div7 div8"
+    "div9 div10"
+    "footer footer";
+}
+.container .nav {
+  grid-area: nav;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 70px;
+  padding: 10px;
+  border-bottom: 1.5px solid rgb(23, 194, 23);
+  position: sticky;
+  top: 0;
+}
+
+.nav .Logo a img {
+  width: 40px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: grey;
+}
+.div1 {
+  grid-area: div1;
+  background: #555555;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+.div1 a {
+  color: white;
+  text-decoration: none;
+}
+.div2 {
+  grid-area: div2;
+  background: url("//assets2.razerzone.com/images/pnx.assets/10a7172f1fd686fcaaccce876e99593b/razer-cthulhu-2024-homepage-desktop2x.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  border-bottom: 10px solid grey;
+}
+.div2 h1 {
+  font-size: 45px;
+  margin-bottom: 0px;
+}
+.div2 p {
+  font-size: 23px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.div2 a {
+  color: white;
+  text-decoration: none;
+  margin-top: 0px;
+  font-size: 20px;
+}
+.div2 a span {
+  color: green;
+}
+.div3 {
+  grid-area: div3;
+  background: url("//assets2.razerzone.com/images/pnx.assets/9d0a8ebf8b1a2e39e745cdefefe9b83d/razer-easter-campaign-homepage-desktop-2x.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  border-bottom: 10px solid grey;
+}
+.div3 h1 {
+  font-size: 45px;
+  margin-bottom: 0px;
+}
+.div3 p {
+  font-size: 23px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.div3 a {
+  color: white;
+  text-decoration: none;
+  margin-top: 0px;
+  font-size: 20px;
+}
+.div3 a span {
+  color: green;
+}
+.div4 {
+  grid-area: div4;
+  background: url("//assets2.razerzone.com/images/pnx.assets/3661f743ad4c48f058861b104004fe01/razer-blade-14-homepage-desktop2x.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  border-bottom: 10px solid grey;
+}
+.div4 h1 {
+  font-size: 45px;
+  margin-bottom: 0px;
+}
+.div4 p {
+  font-size: 23px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.div4 a {
+  color: white;
+  text-decoration: none;
+  margin-top: 0px;
+  font-size: 20px;
+  margin: 10px;
+}
+.div4 a span {
+  color: green;
+}
+.div5 {
+  grid-area: div5;
+  background: url("//assets2.razerzone.com/images/pnx.assets/3104efb034e49d58b0915a5d07c2115a/pubg-battlegrounds-b-950x580-desktop.webp");
+  color: white;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  border-bottom: 10px solid grey;
+  border-right: 10px solid grey;
+}
+.div5 h3 {
+  color: black;
+  box-sizing: border-box;
+  background-color: orange;
+}
+.div5 h1 {
+  font-size: 45px;
+  margin-bottom: 0px;
+}
+.div5 p {
+  font-size: 23px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.div5 a {
+  color: white;
+  text-decoration: none;
+  margin-top: 0px;
+  font-size: 20px;
+  margin: 10px;
+}
+.div5 a span {
+  color: green;
+}
+.div6 {
+  grid-area: div6;
+  background: url("//assets2.razerzone.com/images/pnx.assets/89acc66caa02feac3530c8d538b16d4f/razer-iskur-v2-homepage-b-950x580-desktop.webp");
+  color: white;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  border-bottom: 10px solid grey;
+}
+.div6 h1 {
+  font-size: 45px;
+  margin-bottom: 0px;
+}
+.div6 p {
+  font-size: 23px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.div6 a {
+  color: white;
+  text-decoration: none;
+  margin-top: 0px;
+  font-size: 20px;
+  margin: 10px;
+}
+.div6 a span {
+  color: green;
+}
+.div7 {
+  grid-area: div7;
+  background: url("//assets2.razerzone.com/images/pnx.assets/89acc66caa02feac3530c8d538b16d4f/razer-blade16-2024-b-950x580-desktop.webp");
+  color: white;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  border-bottom: 10px solid grey;
+  border-right: 10px solid grey;
+}
+.div7 h1 {
+  font-size: 45px;
+  margin-bottom: 0px;
+}
+.div7 p {
+  font-size: 23px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.div7 a {
+  color: white;
+  text-decoration: none;
+  margin-top: 0px;
+  font-size: 20px;
+  margin: 10px;
+}
+.div7 a span {
+  color: green;
+}
+.div8 {
+  grid-area: div8;
+  background: url("//assets2.razerzone.com/images/pnx.assets/3104efb034e49d58b0915a5d07c2115a/hammerhead-multiplatform-b-950x580-desktop.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  border-bottom: 10px solid grey;
+}
+.div8 h1 {
+  font-size: 45px;
+  margin-bottom: 0px;
+}
+.div8 p {
+  font-size: 23px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.div8 a {
+  color: white;
+  text-decoration: none;
+  margin-top: 0px;
+  font-size: 20px;
+  margin: 10px;
+}
+.div8 a span {
+  color: green;
+}
+.div9 {
+  grid-area: div9;
+  background: url("//assets2.razerzone.com/images/pnx.assets/bbffede42365ea3ed65d0b13ab080c48/razer-esports-line-b-950x580-desktop-v2.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  border-bottom: 10px solid grey;
+  border-right: 10px solid grey;
+}
+.div9 h1 {
+  font-size: 45px;
+  margin-bottom: 0px;
+}
+.div9 p {
+  font-size: 23px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.div9 a {
+  color: white;
+  text-decoration: none;
+  margin-top: 0px;
+  font-size: 20px;
+  margin: 10px;
+}
+.div9 a span {
+  color: green;
+}
+.div10 {
+  grid-area: div10;
+  background: url("//assets2.razerzone.com/images/pnx.assets/e9d1f25b84209661bb678afc1a1580f8/razerstore-rewards-hammerhead-pro-hyperspeed-b-950x580-desktop.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  border-bottom: 10px solid grey;
+}
+.div10 h1 {
+  font-size: 45px;
+  margin-bottom: 0px;
+}
+.div10 p {
+  font-size: 23px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.div10 a {
+  color: white;
+  text-decoration: none;
+  margin-top: 0px;
+  font-size: 20px;
+  margin: 10px;
+}
+.div10 a span {
+  color: green;
+}
+
+.footer {
+  grid-area: footer;
+  display: grid;
+  justify-content: space-around;
+  background-color: black;
+}
+.footer .top {
+  display: flex;
+  border-bottom: solid 1px gray;
+  justify-content: space-evenly;
+}
+.footer .top .left {
+  display: flex;
+  margin-right: 400px;
+  gap: 50px;
+  margin-top: 20px;
+}
+.col1,
+.col2,
+.col3,
+.col4,
+.col5 {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+.col1 h4,
+.col2 h4,
+.col3 h4,
+.col4 h4,
+.col5 h4 {
+  color: rgb(164, 157, 157);
+  margin: 0px;
+  font-size: 13px;
+  font-weight: 10px;
+}
+.col1 a,
+.col2 a,
+.col3 a,
+.col4 a,
+.col5 a {
+  color: gray;
+  margin-top: 10px;
+  font-size: 13px;
+  text-decoration: none;
+}
+.col5 a {
+  margin-bottom: 0px;
+  border: solid 1px gray;
+  border-radius: 80px;
+  width: 15px;
+  padding: 5px;
+}
+.footer .top .right {
+  color: green;
+  margin-top: 30px;
+}
+.footer .bottom {
+  display: flex;
+  justify-content: space-between;
+  color: gray;
+}
+.footer .bottom .left {
+  display: flex;
+  align-items: center;
+}
+.footer .bottom .left p {
+  margin-right: 30px;
+  font-size: 13px;
+}
+.footer .bottom .left a {
+  font-size: 13px;
+  text-decoration: none;
+  color: gray;
+}
+.footer .bottom .left span {
+  margin-right: 10px;
+  margin-left: 10px;
+  font-size: 13px;
+}
+.footer .bottom .right {
+  display: flex;
+  align-items: center;
+}
+.footer .bottom .right p {
+  font-size: 13px;
+  color: gray;
+}
+.footer .bottom .right a {
+  color: white;
+  text-decoration: none;
+  font-size: 13px;
+}
